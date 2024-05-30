@@ -9,10 +9,15 @@
             background-color: rgb(219, 180, 219);
         }
 .profile-container{
-    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   
+   display: flex;
+   flex-direction: end;
+   flex-wrap:wrap;
+
+}
+.card-container{
+    flex-direction: column;
+    background-color: beige;
+
 }
 .profile-card{
     background-image: linear-gradient(to top,  rgb(206, 157, 206) 0%, rgb(205, 171, 205) 1%, rgb(220, 169, 220) 100%);
@@ -23,7 +28,7 @@
     height: 350px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgb(199, 174, 199);
-   
+
 }
 .profile-img{
     width: 190px;
@@ -56,29 +61,116 @@ h1{
      margin-bottom: 4px;
    
 }
+.card-container1{
+    background-color: rgb(144, 144, 156);
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-container2{
+display: flex;
+flex-direction: row-reverse;
+background-color: rgb(174, 224, 224);
+}
+.profile-container1{
+   display: flex;
+   
+
+}
+.profile-card1{
+    background-image: linear-gradient(to top,  rgb(206, 157, 206) 0%, rgb(205, 171, 205) 1%, rgb(220, 169, 220) 100%);
+    width: 250px;
+    border: 2px solid rgb(70, 12, 70);
+    padding: 10px;
+    margin: 10px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(199, 174, 199);
+   
+   
+}
     </style>
 </head>
 <body>
     <h1>Trending Movies</h1>
+    <h1>BOLLYWOOD MOVIES</h1>
+    <div class="card-container">
     <div class="profile-container">
         <div class="profile-card">
             <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/09/Laapataa-Ladies1.jpg" class="profile-img"/>
             <h3 class="profile-name">Laapta Ladies</h3>
          <button class="btn">Watch Now</button>
             </div>
-
+            </div>
             <div class="profile-container">
                 <div class="profile-card">
                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ5jklHiNdAoDu_9-x0kKyDQnP42Y7m6-9TazbahIAR1VpkmwaehZnmTl33qLdlm2Et2eg" class="profile-img"/>
                     <h3 class="profile-name">Heeramandi</h3>
                     <button class="btn">Watch Now</button>
                     </div>
+                    </div>
 
+                    <div class="profile-container">
                     <div class="profile-card">
-                        <img src="data:image/jpeg;base64,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" class="profile-img"/>
+                        <img src="crew.png" class="profile-img"/>
                         <h3 class="profile-name">Crew</h3>
                         <button class="btn">Watch Now</button>
                         </div>    
-                        </div>                
+                        </div>     
+                        </div>   
+                    
+                        <h1>HOLLYWOOD MOVIES</h1>
+                        <div class="card-container1">
+                        <div class="profile-container1">
+                            <div class="profile-card1">
+                                <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/09/Laapataa-Ladies1.jpg" class="profile-img"/>
+                                <h3 class="profile-name1">Laapta Ladies</h3>
+                             <button class="btn">Watch Now</button>
+                                </div>
+                    </div>
+                                <div class="profile-container1">
+                                    <div class="profile-card1">
+                                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ5jklHiNdAoDu_9-x0kKyDQnP42Y7m6-9TazbahIAR1VpkmwaehZnmTl33qLdlm2Et2eg" class="profile-img"/>
+                                        <h3 class="profile-name1">Heeramandi</h3>
+                                        <button class="btn">Watch Now</button>
+                                        </div>
+                                        </div>
+
+                                        <div class="profile-container1"></div>
+                                        <div class="profile-card1">
+                                            <img src="crew.png" class="profile-img"/>
+                                            <h3 class="profile-name1">Crew</h3>
+                                            <button class="btn">Watch Now</button>
+                                            </div>    
+                                            </div>     
+                                            </div>   
+                                          
+                                            <h1>NETFLIX MOVIES</h1>
+                                            <div class="card-container2">
+                                            <div class="profile-container1">
+                                                <div class="profile-card1">
+                                                    <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/09/Laapataa-Ladies1.jpg" class="profile-img"/>
+                                                    <h3 class="profile-name1">Laapta Ladies</h3>
+                                                 <button class="btn">Watch Now</button>
+                                                    </div>
+                                        </div>
+                                                    <div class="profile-container1">
+                                                        <div class="profile-card1">
+                                                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ5jklHiNdAoDu_9-x0kKyDQnP42Y7m6-9TazbahIAR1VpkmwaehZnmTl33qLdlm2Et2eg" class="profile-img"/>
+                                                            <h3 class="profile-name1">Heeramandi</h3>
+                                                            <button class="btn">Watch Now</button>
+                                                            </div>
+                                                            </div>
+                    
+                                                            <div class="profile-container1"></div>
+                                                            <div class="profile-card1">
+                                                                <img src="crew.png" class="profile-img"/>
+                                                                <h3 class="profile-name1">Crew</h3>
+                                                                <button class="btn">Watch Now</button>
+                                                                </div>    
+                                                                </div>     
+                                                                </div>   
+                                                              
+                    
+
 </body>
 </html>
