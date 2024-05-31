@@ -14,11 +14,7 @@
    flex-wrap:wrap;
 
 }
-.card-container{
-    flex-direction: column;
-    background-color: beige;
 
-}
 .profile-card{
     background-image: linear-gradient(to top,  rgb(206, 157, 206) 0%, rgb(205, 171, 205) 1%, rgb(220, 169, 220) 100%);
     width: 250px;
@@ -62,14 +58,32 @@ h1{
    
 }
 .card-container1{
-    background-color: rgb(144, 144, 156);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
 }
 .card-container2{
-display: flex;
-flex-direction: row-reverse;
-background-color: rgb(174, 224, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-container3{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
 }
 .profile-container1{
    display: flex;
@@ -153,23 +167,23 @@ background-color: rgb(174, 224, 224);
                                                  <button class="btn">Watch Now</button>
                                                     </div>
                                         </div>
-                                                    <div class="profile-container1">
-                                                        <div class="profile-card1">
-                                                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ5jklHiNdAoDu_9-x0kKyDQnP42Y7m6-9TazbahIAR1VpkmwaehZnmTl33qLdlm2Et2eg" class="profile-img"/>
-                                                            <h3 class="profile-name1">Heeramandi</h3>
-                                                            <button class="btn">Watch Now</button>
-                                                            </div>
-                                                            </div>
-                    
-                                                            <div class="profile-container1"></div>
-                                                            <div class="profile-card1">
-                                                                <img src="crew.png" class="profile-img"/>
-                                                                <h3 class="profile-name1">Crew</h3>
-                                                                <button class="btn">Watch Now</button>
-                                                                </div>    
-                                                                </div>     
+                                            
+        
                                                                 </div>   
-                                                              
+                                 
+          
+                                                                <h1>serials</h1>
+                                                                <div class="card-container3">
+                                                                <div class="profile-container1">
+                                                                    <div class="profile-card1">
+                                                                        <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2023/09/Laapataa-Ladies1.jpg" class="profile-img"/>
+                                                                        <h3 class="profile-name1">Laapta Ladies</h3>
+                                                                     <button class="btn">Watch Now</button>
+                                                                        </div>
+                                                            </div>
+                                                                       
+                                                                                    </div>   
+                                                                                                                                         
                     
 
 </body>
